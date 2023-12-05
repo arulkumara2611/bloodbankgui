@@ -3,6 +3,11 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 
+import java.awt.BorderLayout;
+
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
+
 /**
  *
  * @author bshiv
@@ -24,6 +29,17 @@ public class LoginScreen extends javax.swing.JFrame {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
     private void initComponents() {
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        ImageIcon backgroundImage = new ImageIcon("D:/Java/Project/new.jpg"); // Replace with your image path
+        JLabel background = new JLabel(backgroundImage);
+
+        background.setBounds(0, 0, backgroundImage.getIconWidth(), backgroundImage.getIconHeight());
+        background.setLayout(new BorderLayout());
+
+        setContentPane(background);
+
 
         menuBar1 = new java.awt.MenuBar();
         menu1 = new java.awt.Menu();
